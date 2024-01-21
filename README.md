@@ -36,7 +36,6 @@ Según las pruebas que se han realizado, tanto mediante la incorporación de var
   <img src="https://github.com/Junhao42/Estudio-y-optimizacion-de-las-actuaciones-de-bomberos-de-la-comunidad-de-Madrid/blob/main/images/sarimax_final.jpg" height="800" width="800">
 </p>
 
-<div align="center">
 
 | Modelo | MAE | MSE | RMSE |
 | ------- | --- | --- | --- |
@@ -47,7 +46,6 @@ Según las pruebas que se han realizado, tanto mediante la incorporación de var
 | SARIMAX(Samur y policía exógenas) | 494,80 | 426328,59 | 652,94 |
 | LSTM | NaN | NaN | NaN |
 
-</div>
 
 
 Las pruebas con redes recurrentes LSTM no han proporcionado buenas predicciones por la carencia de los datos que teníamos disponibles y su gran variabilidad por épocas atípicas como puede ser la pandemia del COVID-19 o la borrasca Filomena de 2021, pues entre el periodo 2017-2023 hay un total de 74 meses, lo que es insuficiente para modelos que requieres una gran cantidad de información.

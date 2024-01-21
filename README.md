@@ -30,3 +30,24 @@ No es necesaria la ejecución de estos notebooks, los dataframes resultantes se 
 En la carpeta **analisis** se encuentra el notebook "_analisis_cuerpos.ipynb_", que contiene todos los análisis realizados a las intervenciones de los tres cuerpos, junto con las predicciones con modelos de análisis de series temporales, vease ARMA, ARIMA, SARIMAX, LSTM y técnicas de suavizado (Holt-Winters). Todas las explicaciones de los resultados obtenidos se pueden encontrar en el documento "_Informe_del_analisis.pdf_", en el que se realiza un estudio detallado de los procedimientos que se han realizado, además de la justificación de estos con las investigaciones, comparativas y referencias empleadas.
 
 
+$\begin{table}[ht]
+\caption{Comparativa de resultados (error)}\label{comparativa_errores}
+\renewcommand\arraystretch{1.5}
+\noindent\[
+\begin{array}{|c|c|c|c|}
+\hline
+Modelo&MAE&MSE&RMSE\\
+\hline 
+SARIMAX(policía\_exógena)&365.39&282607.48&531.61\\
+\hline 
+SARIMAX(Samur\_exógena)&318.86&153313.32&391.55\\
+\hline
+ARIMA&361.20&220006.98&469.05\\
+\hline
+MA&398.99&219592.39&468.61\\
+\hline
+SARIMAX(Samur\_y\_policía\_exógenas)&494.80&426328.59&652.94\\
+\hline
+\end{array}
+\]
+\end{table}$

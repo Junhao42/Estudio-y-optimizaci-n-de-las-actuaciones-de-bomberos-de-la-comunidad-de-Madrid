@@ -23,4 +23,5 @@ En esta carpeta hay 2 notebooks:
 - **CargaSamurBomberos.ipynb**: Incorpora todos los datos en un mismo dataframe en un intervalo desde 2017-2023.
 - **limpieza_datos_policia.ipynb**: Al tener los datos separados en meses en vez de años, se ha dividido el preprocesamiento de las incidencias del cuerpo de policía en un notebook separado. El resultado final es el mismo, obtener una versión estandarizada con un solo dataframe de las intervenciones entre el periodo 2017-2023.
 
-No es necesaria la ejecución de estos notebooks, los dataframes resultantes se pueden encontrar en la capeta **Data**
+No es necesaria la ejecución de estos notebooks, los dataframes resultantes se pueden encontrar en la carpeta **Data** como los archivos _(bomberos_completo.csv)_, _(actuaciones_policia_total.csv)_, _(samur_completo.csv)_.
+

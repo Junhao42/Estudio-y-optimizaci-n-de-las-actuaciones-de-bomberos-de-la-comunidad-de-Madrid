@@ -32,7 +32,7 @@ En la carpeta "**analisis**" se encuentra el notebook "_analisis_cuerpos.ipynb_"
 Según las pruebas que se han realizado, tanto mediante la incorporación de variables exógenas como sin ellas, podemos concluir que el cuerpo de policía no tiene un impacto positivo como variable exógena sobre la predicción del cuerpo de bomberos. Lo que es esperable pues las incidencias de los dos cuerpos no suelen estar correlacionadas. En cambio, el SAMUR sí consigue ajustar mejor las predicciones, aunque la diferencia entre las predicciones usando únicamente el cuerpo de bomberos y las predicciones con el uso del SAMUR como variable exógena no son muy notables.
 
 
-<img src="https://github.com/Junhao42/Estudio-y-optimizacion-de-las-actuaciones-de-bomberos-de-la-comunidad-de-Madrid/blob/main/images/sarimax_final.jpg" height="300" width="300" >
+<img src="https://github.com/Junhao42/Estudio-y-optimizacion-de-las-actuaciones-de-bomberos-de-la-comunidad-de-Madrid/blob/main/images/sarimax_final.jpg" height="600" width="600" >
 
 | Modelo | MAE | MSE | RMSE |
 | ------- | --- | --- | --- |

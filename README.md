@@ -11,7 +11,7 @@ Para ello, se emplearán los datos de avisos a los bomberos proporcionados por e
 Los datos que se han extraido son:
 
 - Actuaciones del Cuerpo de Bomberos: https://datos.madrid.es/portal/site/egob/menuitem.c05c1f754a33a9fbe4b2e4b284f1a5a0/?vgnextoid=fa677996afc6f510VgnVCM1000001d4a900aRCRD&vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD&vgnextfmt=default
-- Policía Municipal. Datos estad ́ısticos actuaciones Policía Municipal: https://datos.madrid.es/portal/site/egob/menuitem.c05c1f754a33a9fbe4b2e4b284f1a5a0/vgnextoid=bffff1d2a9fdb410VgnVCM2000000c205a0aRCRD&vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD&vgnextfmt=default
+- Policía Municipal. Datos estadísticos actuaciones Policía Municipal: https://datos.madrid.es/portal/site/egob/menuitem.c05c1f754a33a9fbe4b2e4b284f1a5a0/vgnextoid=bffff1d2a9fdb410VgnVCM2000000c205a0aRCRD&vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD&vgnextfmt=default
 - Activaciones del SAMUR-Protección Civil: https://datos.madrid.es/portal/site/egob/menuitem.c05c1f754a33a9fbe4b2e4b284f1a5a0/?vgnextoid=50d7d35982d6f510VgnVCM1000001d4a900aRCRD&vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD&vgnextfmt=default
 
 Se han extraido los datasets por año, exceptuando las intervenciones del cuerpo de policía que se encuentran por meses. Para poder trabajar con los datos adecuadamente se ha realizado la limpieza y preprocesamientos pertinentes, estos se pueden encontrar en la carpeta "**limpieza de datos**". Todos los datos se encuentran en la carpeta "**Data**".
@@ -29,25 +29,26 @@ No es necesaria la ejecución de estos notebooks, los dataframes resultantes se 
 
 En la carpeta **analisis** se encuentra el notebook "_analisis_cuerpos.ipynb_", que contiene todos los análisis realizados a las intervenciones de los tres cuerpos, junto con las predicciones con modelos de análisis de series temporales, vease ARMA, ARIMA, SARIMAX, LSTM y técnicas de suavizado (Holt-Winters). Todas las explicaciones de los resultados obtenidos se pueden encontrar en el documento "_Informe_del_analisis.pdf_", en el que se realiza un estudio detallado de los procedimientos que se han realizado, además de la justificación de estos con las investigaciones, comparativas y referencias empleadas.
 
+Según las pruebas que se han realizado, tanto mediante la incorporación de variables exógenas como sin ellas, podemos concluir que el cuerpo de policía no tiene un impacto positivo como variable exógena sobre la predicción del cuerpo de bomberos. Lo que es esperable pues las incidencias de los dos cuerpos no suelen estar correlacionadas. En cambio, el SAMUR sí consigue ajustar mejor las predicciones, aunque la diferencia entre las predicciones usando únicamente el cuerpo de bomberos y las predicciones con el uso del SAMUR como variable exógena no son muy notables.
 
-$\begin{table}[ht]
-\caption{Comparativa de resultados (error)}\label{comparativa_errores}
-\renewcommand\arraystretch{1.5}
-\noindent\[
-\begin{array}{|c|c|c|c|}
-\hline
-Modelo&MAE&MSE&RMSE\\
-\hline 
-SARIMAX(policía\_exógena)&365.39&282607.48&531.61\\
-\hline 
-SARIMAX(Samur\_exógena)&318.86&153313.32&391.55\\
-\hline
-ARIMA&361.20&220006.98&469.05\\
-\hline
-MA&398.99&219592.39&468.61\\
-\hline
-SARIMAX(Samur\_y\_policía\_exógenas)&494.80&426328.59&652.94\\
-\hline
-\end{array}
-\]
-\end{table}$
+| Modelo | MAE | MSE | RMSE |
+| ------- | --- | --- | --- |
+| SARIMAX(policía exógena) | 365,39 | 282607,48 |  531,61   |
+| Seconds | 318,86 | 153313,32 |  391,55   |
+| Seconds | 301 | 283 |     |
+| Seconds | 301 | 283 |     |
+| Seconds | 301 | 283 |     |
+| Seconds | 301 | 283 |     |
+
+
+
+
+
+
+
+
+
+
+
+
+

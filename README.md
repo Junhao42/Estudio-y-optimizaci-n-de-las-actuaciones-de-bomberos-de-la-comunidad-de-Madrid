@@ -23,8 +23,10 @@ En esta carpeta hay 2 notebooks:
 - "_CargaSamurBomberos.ipynb_": Incorpora todos los datos en un mismo dataframe en un intervalo desde 2017-2023.
 - "_limpieza_datos_policia.ipynb_": Al tener los datos separados en meses en vez de años, se ha dividido el preprocesamiento de las incidencias del cuerpo de policía en un notebook separado. El resultado final es el mismo, obtener una versión estandarizada con un solo dataframe de las intervenciones entre el periodo 2017-2023.
 
-No es necesaria la ejecución de estos notebooks, los dataframes resultantes se pueden encontrar en la carpeta **Data** como los archivos _(bomberos_completo.csv)_, _(actuaciones_policia_total.csv)_, _(samur_completo.csv)_.
+No es necesaria la ejecución de estos notebooks, los dataframes resultantes se pueden encontrar en la carpeta **Data** como los archivos _(bomberos_completo.csv)_, _(actuaciones_policia_total.csv)_, _(samur_completo.zip)_.
 
 ## Análisis de los tres cuerpos
 
-En la carpeta **analisis** se encuentra el notebook "_analisis_cuerpos.ipynb_", en el que se ha realizado el proceso de análisis de los tres cuerpos y predicción empleando modelos de series temporales. La explicación de todos modelos empleados y 
+En la carpeta **analisis** se encuentra el notebook "_analisis_cuerpos.ipynb_", que contiene todos los análisis realizados a las intervenciones de los tres cuerpos, junto con las predicciones con modelos de análisis de series temporales, vease ARMA, ARIMA, SARIMAX, LSTM y técnicas de suavizado (Holt-Winters). Todas las explicaciones de los resultados obtenidos se pueden encontrar en el documento "_Informe_del_analisis.pdf_", en el que se realiza un estudio detallado de los procedimientos que se han realizado, además de la justificación de estos con las investigaciones, comparativas y referencias empleadas.
+
+

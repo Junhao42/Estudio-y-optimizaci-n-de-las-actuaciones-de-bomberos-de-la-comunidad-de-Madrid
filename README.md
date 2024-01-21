@@ -50,7 +50,7 @@ Según las pruebas que se han realizado, tanto mediante la incorporación de var
 
 Las pruebas con redes recurrentes LSTM no han proporcionado buenas predicciones por la carencia de los datos que teníamos disponibles y su gran variabilidad por épocas atípicas como puede ser la pandemia del COVID-19 o la borrasca Filomena de 2021, pues entre el periodo 2017-2023 hay un total de 74 meses, lo que es insuficiente para modelos que requieren una gran cantidad de datos.
 
-Los mejores resultados se han obtenido mediante el uso del modelo SARIMAX, del cual se han probado distintos valores de "_p_", "_q_", "_integraciones_" y "_seasonal_" que se han investigado a lo largo del proyecto, además de añadirse las predicciones obtenidas del Samur como variable exógena. Por otro lado, el uso de ARIMA sin la consideración de varibales exógenas tampoco proporcionan malos resultados. Considerando de media un MAE (Error Medio Absoluto) de 315-362 intervenciones respecto a los datos reales.
+Los mejores resultados se han obtenido mediante el uso del modelo SARIMAX, del cual se han probado distintos valores de "_p_", "_q_", "_integraciones_" y "_seasonal_" que se han investigado a lo largo del proyecto, además de añadirse las predicciones obtenidas del Samur como variable exógena. Por otro lado, el uso de ARIMA sin la consideración de varibales exógenas tampoco proporcionan malos resultados. Considerando de media un MAE(Mean Absolute Error) de 315-362 intervenciones respecto a los datos reales, y los MSE(Mean Squared Error) mas bajos, lo que indican que no se han realizado errores significativamente dispersas sobre los datos reales de test.
 
 
 

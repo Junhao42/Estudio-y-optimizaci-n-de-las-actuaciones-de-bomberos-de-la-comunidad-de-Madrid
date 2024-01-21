@@ -14,17 +14,17 @@ Los datos que se han extraido son:
 - Policía Municipal. Datos estad ́ısticos actuaciones Policía Municipal: https://datos.madrid.es/portal/site/egob/menuitem.c05c1f754a33a9fbe4b2e4b284f1a5a0/vgnextoid=bffff1d2a9fdb410VgnVCM2000000c205a0aRCRD&vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD&vgnextfmt=default
 - Activaciones del SAMUR-Protección Civil: https://datos.madrid.es/portal/site/egob/menuitem.c05c1f754a33a9fbe4b2e4b284f1a5a0/?vgnextoid=50d7d35982d6f510VgnVCM1000001d4a900aRCRD&vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD&vgnextfmt=default
 
-Se han extraido los datasets por año, exceptuando las intervenciones del cuerpo de policía que se encuentran por meses. Para poder trabajar con los datos adecuadamente se ha realizado la limpieza y preprocesamientos pertinentes, estos se pueden encontrar en la carpeta **limpieza de datos**. Todos los datos se encuentran en la carpeta **Data**
+Se han extraido los datasets por año, exceptuando las intervenciones del cuerpo de policía que se encuentran por meses. Para poder trabajar con los datos adecuadamente se ha realizado la limpieza y preprocesamientos pertinentes, estos se pueden encontrar en la carpeta "**limpieza de datos**". Todos los datos se encuentran en la carpeta "**Data**".
 
 ## Limpieza de datos
 
 En esta carpeta hay 2 notebooks:
 
-- **CargaSamurBomberos.ipynb**: Incorpora todos los datos en un mismo dataframe en un intervalo desde 2017-2023.
-- **limpieza_datos_policia.ipynb**: Al tener los datos separados en meses en vez de años, se ha dividido el preprocesamiento de las incidencias del cuerpo de policía en un notebook separado. El resultado final es el mismo, obtener una versión estandarizada con un solo dataframe de las intervenciones entre el periodo 2017-2023.
+- "_CargaSamurBomberos.ipynb_": Incorpora todos los datos en un mismo dataframe en un intervalo desde 2017-2023.
+- "_limpieza_datos_policia.ipynb_": Al tener los datos separados en meses en vez de años, se ha dividido el preprocesamiento de las incidencias del cuerpo de policía en un notebook separado. El resultado final es el mismo, obtener una versión estandarizada con un solo dataframe de las intervenciones entre el periodo 2017-2023.
 
 No es necesaria la ejecución de estos notebooks, los dataframes resultantes se pueden encontrar en la carpeta **Data** como los archivos _(bomberos_completo.csv)_, _(actuaciones_policia_total.csv)_, _(samur_completo.csv)_.
 
 ## Análisis de los tres cuerpos
 
-En la carpeta **analisis** se encuentra el notebook **analisis_cuerpos.ipynb**, en el que se ha realizado el proceso de análisis de los tres cuerpos y predicción empleando modelos de series temporales. La explicación de todos modelos empleados y 
+En la carpeta **analisis** se encuentra el notebook "_analisis_cuerpos.ipynb_", en el que se ha realizado el proceso de análisis de los tres cuerpos y predicción empleando modelos de series temporales. La explicación de todos modelos empleados y 

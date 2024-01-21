@@ -16,7 +16,7 @@ Los datos que se han extraido son:
 
 Se han extraido los datasets por año, exceptuando las intervenciones del cuerpo de policía que se encuentran por meses. Para poder trabajar con los datos adecuadamente se ha realizado la limpieza y preprocesamientos pertinentes que se pueden encontrar en la carpeta "**limpieza de datos**". Todos los datos se encuentran en la carpeta "**Data**".
 
-## Limpieza de datos
+## Carpeta limpieza de datos
 
 En esta carpeta hay 2 notebooks:
 

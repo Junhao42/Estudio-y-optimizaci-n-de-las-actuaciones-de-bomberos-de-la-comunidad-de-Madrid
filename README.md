@@ -25,3 +25,6 @@ En esta carpeta hay 2 notebooks:
 
 No es necesaria la ejecución de estos notebooks, los dataframes resultantes se pueden encontrar en la carpeta **Data** como los archivos _(bomberos_completo.csv)_, _(actuaciones_policia_total.csv)_, _(samur_completo.csv)_.
 
+## Análisis de los tres cuerpos
+
+En la carpeta **analisis** se encuentra el notebook **analisis_cuerpos.ipynb**, en el que se ha realizado el proceso de análisis de los tres cuerpos y predicción empleando modelos de series temporales. La explicación de todos modelos empleados y 

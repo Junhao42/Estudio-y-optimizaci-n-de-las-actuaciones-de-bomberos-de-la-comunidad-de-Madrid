@@ -44,7 +44,7 @@ Según las pruebas que se han realizado, tanto mediante la incorporación de var
 | ARIMA | 361,20 | 220006,98 | 469,05 |
 | MA | 398,99 | 219592,39 | 468,61 |
 | SARIMAX(Samur y policía exógenas) | 494,80 | 426328,59 | 652,94 |
-| LSTM | NaN | NaN | NaN |
+| LSTM | - | - | - |
 
 
 
